@@ -4,6 +4,7 @@ import Portafolio from "./components/portafolio/Portafolio";
 import Testimonials from "./components/testimonals/Testimonials";
 import Topbar from "./components/topbar/Topbar";
 import Work from "./components/work/Work";
+import './app.scss'
 
 function App() {
   return (
@@ -16,7 +17,6 @@ function App() {
         <Testimonials/>
         <Contact/>
       </div>
-      
     </div>
   );
 }
