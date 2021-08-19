@@ -23,7 +23,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} nightMode={nightMode}/>
       <div className="sections">
         <Intro nightMode={nightMode} />
-        <Portafolio />
+        <Portafolio nightMode={nightMode} />
         <Work />
         <Testimonials />
         <Contact />
