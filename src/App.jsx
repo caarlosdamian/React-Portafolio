@@ -20,7 +20,7 @@ function App() {
         nightMode={nightMode}
         setNightMode={setNightMode}
       />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} nightMode={nightMode}/>
       <div className="sections">
         <Intro nightMode={nightMode} />
         <Portafolio />
