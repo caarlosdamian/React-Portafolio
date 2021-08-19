@@ -1,7 +1,7 @@
 import "../../styles/topbar.scss";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 import MailIcon from "@material-ui/icons/Mail";
-
+import Brightness6Icon from "@material-ui/icons/Brightness5";
 export default function Topbar({
   setMenuOpen,
   menuOpen,
@@ -9,18 +9,24 @@ export default function Topbar({
   nightMode,
 }) {
   return (
-    <div className={"topbar " + (menuOpen && "active ") + (nightMode&& " night")}>
+    <div
+      className={"topbar " + (menuOpen && "active ") + (nightMode && " night")}
+    >
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
             Damian.
           </a>
-          <div className="itemContainer">
-            <NightsStayIcon
-              className="icon"
-              onClick={() => setNightMode(!nightMode)}
-            />
-            <span>Mode</span>
+          <div
+            className="itemContainer"
+            onClick={() => setNightMode(!nightMode)}
+          >
+            {nightMode ? (
+              <Brightness6Icon className="icon" />
+            ) : (
+              <NightsStayIcon className="icon" />
+            )}
+            <span> Mode</span>
           </div>
           <div className="itemContainer">
             <MailIcon className="icon" />
