@@ -1,19 +1,27 @@
 import "../../styles/topbar.scss";
-// import PersonIcon from '@material-ui/icons/Person';
+import NightsStayIcon from "@material-ui/icons/NightsStay";
 import MailIcon from "@material-ui/icons/Mail";
 
-export default function Topbar({ setMenuOpen, menuOpen }) {
+export default function Topbar({
+  setMenuOpen,
+  menuOpen,
+  setNightMode,
+  nightMode,
+}) {
   return (
-    <div className={"topbar "+ (menuOpen && "active")}>
+    <div className={"topbar " + (menuOpen && "active ") + (nightMode&& " night")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
             Damian.
           </a>
-          {/* <div className="itemContainer">
-                        <PersonIcon className="icon"/>
-                        <span>3121345461</span>
-                    </div> */}
+          <div className="itemContainer">
+            <NightsStayIcon
+              className="icon"
+              onClick={() => setNightMode(!nightMode)}
+            />
+            <span>Mode</span>
+          </div>
           <div className="itemContainer">
             <MailIcon className="icon" />
             <span>carlos@touchof.tech</span>

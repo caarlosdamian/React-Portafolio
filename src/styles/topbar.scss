@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  transition: all 1s ease ;
+  transition: all 1s ease;
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -57,23 +57,41 @@
       }
     }
   }
-  &.active{
+  &.active {
     background-color: $mainColor;
     color: white;
 
-    .hambuerger{
-      span{
-        &:first-child{
+    .hambuerger {
+      span {
+        &:first-child {
           background-color: white;
           transform: rotate(45deg);
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
-        &:last-child{
+        &:last-child {
           background-color: white;
           transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &.night {
+    background-color: $mainColor;
+    color: white;
+    .hambuerger {
+      color: white;
+      span {
+        &:first-child {
+          background-color: white;
+        }
+        &:nth-child(2) {
+          background-color: white;
 
+        }
+        &:last-child {
+          background-color: white;
         }
       }
     }
