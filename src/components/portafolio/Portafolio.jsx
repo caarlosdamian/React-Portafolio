@@ -1,17 +1,32 @@
 import { useState } from "react";
 import "../../styles/portafolio.scss";
 import PortafolioList from "../portafolioList/PortafolioList";
+import {
+  featuredPortfolio,
+  webPortfolio,
+} from "../../data";
+import { useEffect } from "react";
 
 export default function Portafolio({ nightMode }) {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
   const list = [
     { id: "featured", title: "Featured" },
-    { id: "webapp", title: "Web App" },
-    { id: "mobileapp", title: "Mobile app" },
-    { id: "desing", title: "Desing" },
-    { id: "branding", title: "Branding" },
-    { id: "testng", title: "Testing" },
+    { id: "web", title: "Web App" },
+
   ];
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "web":
+        setData(webPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
   return (
     <div className={"portafolio " + (nightMode && " night")} id="portafolio">
       <h1>Portafolio</h1>
@@ -27,30 +42,12 @@ export default function Portafolio({ nightMode }) {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
-        <div className="item">
-          <img src="https://i.ibb.co/qph2cZn/image.pngg" alt="" />
-          <h3>Travel App</h3>
-        </div>
+        {data.map((item) => (
+          <div className="item" key={item.id}>
+            <img src={item.img} alt="projects" />
+            <h3>{item.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );

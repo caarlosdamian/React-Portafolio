@@ -24,7 +24,7 @@ function App() {
       <div className="sections">
         <Intro nightMode={nightMode} />
         <Portafolio nightMode={nightMode} />
-        <Work />
+        <Work nightMode={nightMode}/>
         <Testimonials />
         <Contact />
       </div>
