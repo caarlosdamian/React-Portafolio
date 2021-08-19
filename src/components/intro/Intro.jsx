@@ -5,7 +5,6 @@ export default function Intro({ nightMode }) {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
       showCursor: true,
