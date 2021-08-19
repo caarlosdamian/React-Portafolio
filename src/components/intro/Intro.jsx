@@ -1,7 +1,7 @@
 import "../../styles/intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-export default function Intro({ nightMode }) {
+export default function Intro({ nightMode,setMenuOpen }) {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
@@ -12,7 +12,7 @@ export default function Intro({ nightMode }) {
     });
   }, []);
   return (
-    <div className={"intro " + (nightMode && "night")} id="intro">
+    <div className={"intro " + (nightMode && "night")} id="intro" onClick={()=>setMenuOpen(false)}>
       <div className="left">
         <div className="imgContainer">
           <img src="assets/man2.png" alt="myPhoto" />
