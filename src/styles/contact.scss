@@ -78,5 +78,16 @@
   }
   &.night {
     background-color: $nightMode;
+    color: white;
+
+    form {
+      button {
+        background-color: white;
+        color: black;
+      }
+      span {
+        color: rgb(106, 170, 106);
+      }
+    }
   }
 }
