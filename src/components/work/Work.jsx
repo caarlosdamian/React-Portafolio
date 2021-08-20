@@ -1,9 +1,9 @@
 import "../../styles/work.scss";
-import { featuredPortfolio } from "../../data";
+import { SliderData } from "../../data";
 import { useState } from "react";
 export default function Work({ nightMode, setMenuOpen }) {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const data = featuredPortfolio;
+  const data = SliderData;
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 5)

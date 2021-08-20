@@ -213,3 +213,38 @@ export const testimonials = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
   },
 ];
+
+export const SliderData = [
+  {
+    id: 1,
+    title: "Travel Advisor",
+    icon: "./assets/mobile.png",
+    img: "https://i.ibb.co/qph2cZn/image.pngg",
+    description:
+      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+  },
+  {
+    id: 2,
+    title: "Agency Portafolio",
+    icon: "./assets/globe.png",
+    img: "https://i.ibb.co/j6Bhx6t/Screen-Shot-2021-08-19-at-9-16-31.png",
+    description:
+      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+  },
+  {
+    id: 3,
+    title: "Crypto Tracker",
+    icon: "./assets/writing.png",
+    img: "https://i.ibb.co/3WgNMWm/Screen-Shot-2021-08-12-at-18-14-39.png",
+    description:
+      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+  },
+  {
+    id: 4,
+    title: "Breaking Bad App",
+    icon: "./assets/writing.png",
+    img: "https://i.ibb.co/ssx7Bws/Screen-Shot-2021-08-15-at-18-03-38.png",
+    description:
+      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+  }
+];

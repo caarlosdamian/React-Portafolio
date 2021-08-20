@@ -28,6 +28,10 @@
         align-items: center;
         margin-left: 40px;
 
+        @include mobile{
+          display: none;
+        }
+
         .icon {
           font-size: 18px;
           margin-left: 10px;
