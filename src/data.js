@@ -193,10 +193,10 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: "Alex Kalinski",
-    title: "Co-Founder of DELKA",
+    name: "Mariana Trujillo",
+    title: "Founder Mariana Inc.",
     img:
-      "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://i.ibb.co/0Jvty5D/Mprofile.jpg",
     icon: "assets/youtube.png",
     desc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",

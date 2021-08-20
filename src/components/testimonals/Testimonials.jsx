@@ -1,14 +1,21 @@
 import "../../styles/testimonials.scss";
 import { testimonials } from "../../data";
 
-export default function Testimonials({ nightMode }) {
+export default function Testimonials({ nightMode, setMenuOpen }) {
   return (
-    <div className={"testimonials " + (nightMode && "night")} id="testimonials">
+    <div
+      className={"testimonials " + (nightMode && "night")}
+      id="testimonials"
+      onClick={() => setMenuOpen(false)}
+    >
       <h1>Testimonials</h1>
       <div className="container">
         {testimonials.map((testimonial) => (
-  <div className={testimonial.featured ? "card featured" : "card"}>
-                  <div className="top">
+          <div
+            key={testimonial.id}
+            className={testimonial.featured ? "card featured" : "card"}
+          >
+            <div className="top">
               <img
                 src="assets/right-arrow.png"
                 alt="right-arrow"

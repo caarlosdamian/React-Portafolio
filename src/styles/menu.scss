@@ -39,5 +39,6 @@
   }
   &.night {
     background-color: $nightMode;
+    border-left:  1px outset rgb(253, 253, 253);
   }
 }

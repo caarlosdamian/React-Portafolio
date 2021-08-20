@@ -1,16 +1,22 @@
 import "../../styles/work.scss";
 import { featuredPortfolio } from "../../data";
 import { useState } from "react";
-export default function Work({ nightMode }) {
+export default function Work({ nightMode, setMenuOpen }) {
   const [currentSlider, setCurrentSlider] = useState(0);
   const data = featuredPortfolio;
   const handleClick = (way) => {
     way === "left"
-    ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 5)
-    : setCurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0);
+      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 5)
+      : setCurrentSlider(
+          currentSlider < data.length - 1 ? currentSlider + 1 : 0
+        );
   };
   return (
-    <div className={"works " + (nightMode && " night")} id="work">
+    <div
+      className={"works " + (nightMode && " night")}
+      id="work"
+      onClick={() => setMenuOpen(false)}
+    >
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlider * 100}vw)` }}

@@ -1,19 +1,15 @@
 import { useState } from "react";
 import "../../styles/portafolio.scss";
 import PortafolioList from "../portafolioList/PortafolioList";
-import {
-  featuredPortfolio,
-  webPortfolio,
-} from "../../data";
+import { featuredPortfolio, webPortfolio } from "../../data";
 import { useEffect } from "react";
 
-export default function Portafolio({ nightMode }) {
+export default function Portafolio({ nightMode, setMenuOpen }) {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
     { id: "featured", title: "Featured" },
     { id: "web", title: "Web App" },
-
   ];
   useEffect(() => {
     switch (selected) {
@@ -28,7 +24,11 @@ export default function Portafolio({ nightMode }) {
     }
   }, [selected]);
   return (
-    <div className={"portafolio " + (nightMode && " night")} id="portafolio">
+    <div
+      className={"portafolio " + (nightMode && " night")}
+      id="portafolio"
+      onClick={() => setMenuOpen(false)}
+    >
       <h1>Portafolio</h1>
       <ul>
         {list.map((item) => (

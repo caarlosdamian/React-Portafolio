@@ -23,10 +23,10 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} nightMode={nightMode}/>
       <div className="sections">
         <Intro nightMode={nightMode} setMenuOpen={setMenuOpen}/>
-        <Portafolio nightMode={nightMode} />
-        <Work nightMode={nightMode}/>
-        <Testimonials nightMode={nightMode} />
-        <Contact />
+        <Portafolio nightMode={nightMode} setMenuOpen={setMenuOpen}  />
+        <Work nightMode={nightMode} setMenuOpen={setMenuOpen} />
+        <Testimonials nightMode={nightMode} setMenuOpen={setMenuOpen} />
+        <Contact nightMode={nightMode} setMenuOpen={setMenuOpen} />
       </div>
     </div>
   );
