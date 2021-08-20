@@ -6,7 +6,7 @@ export default function Work({ nightMode, setMenuOpen }) {
   const data = SliderData;
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 5)
+      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 3)
       : setCurrentSlider(
           currentSlider < data.length - 1 ? currentSlider + 1 : 0
         );

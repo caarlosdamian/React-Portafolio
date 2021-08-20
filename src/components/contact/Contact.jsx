@@ -1,30 +1,37 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "../../styles/contact.scss";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact({ setMenuOpen, nightMode }) {
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState(null);
+  const captcha = useRef(null);
   console.log(process.env.REACT_APP_EMAIL_API_KEY);
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_nvllena",
-        "template_zzxueu9",
-        e.target,
-        `${process.env.REACT_APP_EMAIL_API_KEY}`
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    setMessage(true);
-    e.target.reset();
+    if (captcha.current.getValue()) {
+      emailjs
+        .sendForm(
+          "service_nvllena",
+          "template_zzxueu9",
+          e.target,
+          `${process.env.REACT_APP_EMAIL_API_KEY}`
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      setMessage(true);
+      e.target.reset();
+    } else {
+      setMessage(false);
+    }
   };
+  const onChange = () => {};
   return (
     <div
       className={"contact " + (nightMode && "night")}
@@ -45,6 +52,17 @@ export default function Contact({ setMenuOpen, nightMode }) {
             rows="10"
             placeholder="Message"
           ></textarea>
+
+          <ReCAPTCHA
+            className="recapcha"
+            ref={captcha}
+            sitekey="6LchhREcAAAAAJEpVeg3xEfFTYZqTSpEVsZUBkE8"
+            onChange={onChange}
+          />
+          {message === false && (
+            <span className="catpcha">Please enter captcha</span>
+          )}
+
           <button type="submit" value="Send">
             Send
           </button>
