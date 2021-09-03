@@ -15,7 +15,7 @@ export default function Intro({ nightMode,setMenuOpen }) {
     <div className={"intro " + (nightMode && "night")} id="intro" onClick={()=>setMenuOpen(false)}>
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man2.png" alt="myPhoto" />
+          <img src="assets/man5.png" alt="myPhoto" />
         </div>
       </div>
       <div className="right">
