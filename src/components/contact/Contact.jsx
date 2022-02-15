@@ -52,13 +52,14 @@ export default function Contact({ setMenuOpen, nightMode }) {
             rows="10"
             placeholder="Message"
           ></textarea>
-
+      <div>
           <ReCAPTCHA
             className="recapcha"
             ref={captcha}
             sitekey="6LchhREcAAAAAJEpVeg3xEfFTYZqTSpEVsZUBkE8"
             onChange={onChange}
           />
+          </div>
           {message === false && (
             <span className="catpcha">Please enter captcha</span>
           )}

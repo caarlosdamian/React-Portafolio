@@ -5,7 +5,7 @@ export const featuredPortfolio = [
     icon: "./assets/mobile.png",
     img: "https://i.ibb.co/qph2cZn/image.pngg",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      "Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs, data filtering and much more, this Travel Advisor App is the best Maps Application that you can currently find on the ent…",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const featuredPortfolio = [
     icon: "./assets/globe.png",
     img: "https://i.ibb.co/j6Bhx6t/Screen-Shot-2021-08-19-at-9-16-31.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      "Touch of tech It consultory single page application.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const featuredPortfolio = [
     icon: "./assets/writing.png",
     img: "https://i.ibb.co/3WgNMWm/Screen-Shot-2021-08-12-at-18-14-39.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      " a powerful application to be able to carry your portfolio of crypto currencies.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const featuredPortfolio = [
     icon: "./assets/writing.png",
     img: "https://i.ibb.co/ssx7Bws/Screen-Shot-2021-08-15-at-18-03-38.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      " An api to have fun and pass the time based on the acclaimed series breaking bad.",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const featuredPortfolio = [
     icon: "./assets/globe.png",
     img: "https://i.ibb.co/r3TQTSf/Screen-Shot-2021-08-18-at-10-14-15.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry so this app will help you to create it to fill your apps.",
   },
   {
     id: 6,
@@ -183,34 +183,34 @@ export const contentPortfolio = [
 export const testimonials = [
   {
     id: 1,
-    name: "Tom Durden",
-    title: "Senior Developer",
+    name: "Emilio Duran",
+    title: "CFO - Touch of Tech",
     img:
-      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://ca.slack-edge.com/T02U9STN8BB-U02TZGQ969J-9ced575cead0-512",
     icon: "assets/twitter.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "Good worker, excellent in his field, I would work with him again.",
   },
   {
     id: 2,
     name: "Mariana Trujillo",
-    title: "Founder Mariana Inc.",
+    title: "Founder Mixhi Inc.",
     img:
       "https://i.ibb.co/0Jvty5D/Mprofile.jpg",
     icon: "assets/youtube.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      "Carlos is a very efficient person, responsible above all disciplined, recommended work..",
     featured: true,
   },
   {
     id: 3,
-    name: "Martin Harold",
-    title: "CEO of ALBI",
+    name: "Alan Luna",
+    title: "Software Engineer",
     img:
-      "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://ca.slack-edge.com/T02U9STN8BB-U02U46S1GH0-c6d1a8fb79ac-512",
     icon: "assets/linkedin.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      "Good worker, excellent system, always on the lookout for what is needed, good knowledge of technologies.",
   },
 ];
 
@@ -221,7 +221,7 @@ export const SliderData = [
     icon: "./assets/mobile.png",
     img: "https://i.ibb.co/qph2cZn/image.pngg",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      " Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location.",
   },
   {
     id: 2,
@@ -229,7 +229,7 @@ export const SliderData = [
     icon: "./assets/globe.png",
     img: "https://i.ibb.co/j6Bhx6t/Screen-Shot-2021-08-19-at-9-16-31.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      "Touch of tech It consultory single page application..",
   },
   {
     id: 3,
@@ -237,7 +237,7 @@ export const SliderData = [
     icon: "./assets/writing.png",
     img: "https://i.ibb.co/3WgNMWm/Screen-Shot-2021-08-12-at-18-14-39.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      "A powerful application to be able to carry your portfolio of crypto currencies.",
   },
   {
     id: 4,
@@ -245,6 +245,6 @@ export const SliderData = [
     icon: "./assets/writing.png",
     img: "https://i.ibb.co/ssx7Bws/Screen-Shot-2021-08-15-at-18-03-38.png",
     description:
-      " Lorem Ipsum is simply dummy text of the printing andtypesetting industry.",
+      "An api to have fun and pass the time based on the acclaimed series breaking bad.",
   }
 ];
